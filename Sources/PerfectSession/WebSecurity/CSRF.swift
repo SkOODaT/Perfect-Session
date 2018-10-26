@@ -69,7 +69,7 @@ public class CSRFSecurity {
 
 	// Determine Origin
 	static func getOriginNoHTTP(_ request: HTTPRequest) -> String {
-		return killhttp(getOrigin(request))
+		return domainOnly(getOrigin(request))
 	}
 
 	static func getOrigin(_ request: HTTPRequest) -> String {
@@ -103,4 +103,8 @@ public class CSRFSecurity {
 			return str
 		}
 	}
+    
+    static func domainOnly(_ str: String) -> String {
+        return killhttp(str).components(separatedBy: "/")[0]
+    }
 }
