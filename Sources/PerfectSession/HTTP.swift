@@ -10,7 +10,7 @@ import PerfectHTTP
 import Foundation
 
 public extension HTTPRequest {
-	public(set) public var session: PerfectSession? {
+    var session: PerfectSession? {
 		get {
 			return scratchPad["PerfectSession"] as? PerfectSession
 		}
