@@ -13,8 +13,8 @@ let package = Package(
             targets: ["PerfectSession"]),
     ],
     dependencies: [
-        .package(name: "PerfectHTTP", url: "https://github.com/123FLO321/Perfect-HTTP.git", .branch("swift5")),
-        .package(name: "PerfectLogger", url: "https://github.com/123FLO321/Perfect-Logger.git", .branch("swift5")),
+        .package(name: "PerfectHTTP", url: "https://github.com/SkOODaT/Perfect-HTTP.git", .branch("SKOODAT")),
+        .package(name: "PerfectLogger", url: "https://github.com/SkOODaT/Perfect-Logger.git", .branch("SKOODAT")),
     ],
     targets: [
         .target(
